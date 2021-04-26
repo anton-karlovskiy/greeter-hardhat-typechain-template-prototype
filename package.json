@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "hardhat-compile": "npx hardhat compile",
     "hardhat-test": "npx hardhat test",
     "hardhat-node": "npx hardhat node",

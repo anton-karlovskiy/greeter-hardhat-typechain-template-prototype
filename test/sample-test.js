@@ -6,9 +6,9 @@ describe("Greeter", function() {
     const greeter = await Greeter.deploy("Hello, world!");
     
     await greeter.deployed();
-    expect(await greeter.greet()).to.equal("Hello, world!");
+    expect(await greeter.getGreeting()).to.equal("Hello, world!");
 
     await greeter.setGreeting("Hola, mundo!");
-    expect(await greeter.greet()).to.equal("Hola, mundo!");
+    expect(await greeter.getGreeting()).to.equal("Hola, mundo!");
   });
 });
