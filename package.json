@@ -7,7 +7,7 @@
     "hardhat-compile": "npx hardhat compile",
     "hardhat-test": "npx hardhat test",
     "hardhat-node": "npx hardhat node",
-    "hardhat-deploy:local": "npx hardhat run scripts/sample-script.js --network localhost"
+    "hardhat-deploy:local": "npx hardhat run scripts/deploy.ts --network localhost"
   },
   "repository": {
     "type": "git",
