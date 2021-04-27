@@ -2,12 +2,15 @@
   "name": "hardhat-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/typechain/index.js",
+  "types": "dist/typechain/index.d.ts",
   "scripts": {
     "hardhat-compile": "npx hardhat compile",
     "hardhat-test": "npx hardhat test",
     "hardhat-node": "npx hardhat node",
-    "hardhat-deploy:local": "npx hardhat run scripts/deploy.ts --network localhost"
+    "hardhat-deploy:local": "npx hardhat run scripts/deploy.ts --network localhost",
+    "build": "yarn hardhat-compile && yarn tsc",
+    "tsc": "tsc -p . && cp typechain/*.d.ts dist/typechain/"
   },
   "repository": {
     "type": "git",
