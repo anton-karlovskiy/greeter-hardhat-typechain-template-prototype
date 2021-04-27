@@ -21,5 +21,11 @@ task("accounts", "Prints the list of accounts", async (args, hre) => {
  */
 module.exports = {
   solidity: "0.7.3",
+  // MEMO: inspired by https://hardhat.org/metamask-issue.html
+  networks: {
+    hardhat: {
+      chainId: 1337
+    }
+  }
 };
 
