@@ -28,7 +28,7 @@ yarn link
 To get started on the UI:
 
 ```bash
-cd unizen-exchange
+cd dapp
 yarn install
 yarn link hardhat-sample
 yarn dev
