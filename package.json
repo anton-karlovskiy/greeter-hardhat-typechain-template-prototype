@@ -1,5 +1,5 @@
 {
-  "name": "hardhat-sample",
+  "name": "greeter",
   "version": "1.0.0",
   "description": "",
   "main": "dist/typechain/index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anton-karlovskiy/hardhat-sample.git"
+    "url": "git+https://github.com/anton-karlovskiy/greeter.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anton-karlovskiy/hardhat-sample/issues"
+    "url": "https://github.com/anton-karlovskiy/greeter/issues"
   },
-  "homepage": "https://github.com/anton-karlovskiy/hardhat-sample#readme",
+  "homepage": "https://github.com/anton-karlovskiy/greeter#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",

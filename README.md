@@ -4,7 +4,7 @@
 In one terminal, start your hardhat node:
 
 ```bash
-cd hardhat-sample
+cd greeter
 yarn install
 yarn hardhat-node
 ```
@@ -12,7 +12,7 @@ yarn hardhat-node
 In another terminal, compile and deploy the contracts as well as creating the typechain interfaces:
 
 ```bash
-cd hardhat-sample
+cd greeter
 yarn build
 yarn hardhat-deploy:local
 ```
@@ -30,7 +30,7 @@ To get started on the UI:
 ```bash
 cd dapp
 yarn install
-yarn link hardhat-sample
+yarn link greeter
 yarn dev
 ```
 
@@ -39,5 +39,5 @@ Import in a UI component like so:
 import {
   Greeter,
   Greeter__factory
-} from 'hardhat-sample';
+} from 'greeter';
 ```
