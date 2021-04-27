@@ -23,7 +23,7 @@ Tip: you can link your projects with yarn to sync updates easily.
 yarn link
 ```
 
-### Next.js project (frontend UI)
+### Frontend project (e.g. create-react-app or Next.js)
 
 To get started on the UI:
 
@@ -32,4 +32,12 @@ cd dapp
 yarn install
 yarn link hardhat-sample
 yarn dev
+```
+
+Import in a UI component like so:
+```js
+import {
+  Greeter,
+  Greeter__factory
+} from 'hardhat-sample';
 ```
