@@ -1,6 +1,11 @@
 
 ### Hardhat project (smart contract)
 
+#### Notes
+
+- `tsconfig.json`
+- `main` and `types` properties in `package.json`
+
 In one terminal, start your hardhat node:
 
 ```bash
@@ -22,6 +27,18 @@ Tip: you can link your projects with yarn to sync updates easily.
 ```bash
 yarn link
 ```
+
+#### TODOs
+
+- Could remove `"./scripts"` and `"./test"` from `"include"` of `tsconfig.json` as they are not used in the frontend project.
+- Can set up `yarn install` via GitHub repository.
+```bash
+  "dependencies": {
+    "GitRepo": "git+https://<token-from-github>:x-oauth-basic@github.com/<user>/<GitRepo>.git"
+  }
+```
+- Could use [yalc](https://github.com/wclr/yalc) rather than `yarn link`.
+- Should establish approaches to deploying to mainnet and testnet as well as to the local network.
 
 ### Frontend project (e.g. create-react-app or Next.js)
 
